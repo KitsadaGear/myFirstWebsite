@@ -40,36 +40,99 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
+                class="nav-link"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                onclick="document.getElementById('id01').style.display='block'"
               >
-                My Favorite
+                My Favorite Basketball players
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Study Schedule</a>
+              <a class="nav-link" href="schedule.html">My Study Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reference</a>
+              <a class="nav-link" href="reference.html">Reference</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
+
+    <!-- The Modal Popup -->
+    <div id="id01" class="modal">
+      <!-- Modal Content -->
+      <form
+        class="modal-content animate"
+        id="login_form"
+        action="../database_php/login_database.php"
+        method="post"
+      >
+        <div class="containers">
+          <h1>My Favorite Basketball players</h1>
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            ;
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+        </div>
+
+        <div class="row">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="../img/52615407_original.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button href="#" class="btn btn-primary">More detail</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="../img/stephen-curry-warriors-nba-playoffs-sweep.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button href="#" class="btn btn-primary">More detail</button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="../img/luka-doncic-2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button href="#" class="btn btn-primary">More detail</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="page_content"></div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
