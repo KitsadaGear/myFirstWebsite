@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+.myIndex {
+  margin: 0;
+  width: 100%;
+}
+
 .menubar .bg-light {
   background-color: black !important;
   padding: 15px;
@@ -32,12 +40,13 @@
   color: wheat;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 /*Show Pop up */
 
-/* Full-width input fields */
-
-/* Set a style for all buttons */
-.modal button {
+.modal a {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -45,7 +54,7 @@
   width: 100%;
 }
 
-button:hover {
+a:hover {
   opacity: 0.8;
 }
 
@@ -56,6 +65,19 @@ button:hover {
 span.psw {
   float: right;
   padding-top: 16px;
+}
+
+.modal .card {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.modal .card img {
+  margin: 0;
+}
+
+.modal h5 {
+  text-align: center;
 }
 
 /* The Modal (background) */
@@ -80,9 +102,9 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-image: url(../img/3440165.jpg);
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 60%;
 }
 
 /* The Close Button */
@@ -133,6 +155,7 @@ span.psw {
   }
 }
 
+/* Content */
 .page_content {
   background-image: url(../img/25101.jpg);
   background-size: 100% 100%;
@@ -141,15 +164,25 @@ span.psw {
   margin: 0;
 }
 
-/* ------------- Pop up ----------- */
-
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-left: 80px;
-  margin-bottom: 20px;
+.page_content .container .row .col-sm {
+  margin-top: 100px;
+  width: 25rem;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  padding: 0%;
 }
 
-.card img {
+.page_content .container .row .col-sm img {
   margin: 0;
+  display: block;
+  width: 100%;
+}
+
+.page_content .container .row #column1 {
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.page_content .container .row #column3 {
+  border-right-style: solid;
 }

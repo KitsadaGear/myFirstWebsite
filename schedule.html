@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="css/schedule-style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="myIndex">
+      <div class="menubar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html"
+            ><i class="fa fa-odnoklassniki" aria-hidden="true"> MyProfile</i></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  role="button"
+                  onclick="document.getElementById('id01').style.display='block'"
+                >
+                  My Favorite Basketball players
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">My Study Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- The Modal Popup -->
+      <div id="id01" class="modal">
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+          <div class="containers">
+            <h1>My Favorite Basketball players</h1>
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              ;
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+          </div>
+
+          <div class="row">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/52615407_original.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Allen Iverson</h5>
+                <p class="card-text">
+                  Allen Ezail Iverson, nicknamed "the Answer" and "AI", is an
+                  American former professional basketball player. He played 14
+                  seasons in the National Basketball Association at both the
+                  shooting guard and point guard positions
+                </p>
+                <p class="card-text">
+                  Height: 2.01 m
+                </p>
+                <p class="card-text">
+                  Weight: 104 kg
+                </p>
+                <a href="favorite/fav1.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/luka-doncic-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luka Dončić</h5>
+                <p class="card-text">
+                  Luka Dončić is a Slovenian professional basketball player for
+                  the Dallas Mavericks of the National Basketball Association
+                  and the Slovenian national team. Dončić shone as a youth
+                  player for Union Olimpija
+                </p>
+                <p class="card-text">
+                  Height: 1.83 m
+                </p>
+                <p class="card-text">
+                  Weight: 75 kg
+                </p>
+                <a href="favorite/fav2.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/stephen-curry-warriors-nba-playoffs-sweep.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Stephen Curry</h5>
+                <p class="card-text">
+                  Stephen "Steph" Curry II is an American professional
+                  basketball player for the Golden State Warriors of the
+                  National Basketball Association Many players and analysts have
+                  called him the greatest shooter in NBA history.
+                </p>
+                <p class="card-text">
+                  Height: 1.91 m
+                </p>
+                <p class="card-text">
+                  Weight: 86 kg
+                </p>
+                <a href="favorite/fav3.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

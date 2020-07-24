@@ -18,121 +18,171 @@
     />
   </head>
   <body>
-    <div class="menubar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"
-          ><i class="fa fa-odnoklassniki" aria-hidden="true"> MyProfile</i></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                role="button"
-                onclick="document.getElementById('id01').style.display='block'"
-              >
-                My Favorite Basketball players
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="schedule.html">My Study Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="reference.html">Reference</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <!-- The Modal Popup -->
-    <div id="id01" class="modal">
-      <!-- Modal Content -->
-      <form
-        class="modal-content animate"
-        id="login_form"
-        action="../database_php/login_database.php"
-        method="post"
-      >
-        <div class="containers">
-          <h1>My Favorite Basketball players</h1>
-          <span
-            onclick="document.getElementById('id01').style.display='none'"
-            ;
-            class="close"
-            title="Close Modal"
-            >&times;</span
+    <div class="myIndex">
+      <div class="menubar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html"
+            ><i class="fa fa-odnoklassniki" aria-hidden="true"> MyProfile</i></a
           >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  role="button"
+                  onclick="document.getElementById('id01').style.display='block'"
+                >
+                  My Favorite Basketball players
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">My Study Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reference.html">Reference</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- The Modal Popup -->
+      <div id="id01" class="modal">
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+          <div class="containers">
+            <h1>My Favorite Basketball players</h1>
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              ;
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+          </div>
+
+          <div class="row">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/52615407_original.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Allen Iverson</h5>
+                <p class="card-text">
+                  Allen Ezail Iverson, nicknamed "the Answer" and "AI", is an
+                  American former professional basketball player. He played 14
+                  seasons in the National Basketball Association at both the
+                  shooting guard and point guard positions
+                </p>
+                <p class="card-text">
+                  Height: 2.01 m
+                </p>
+                <p class="card-text">
+                  Weight: 104 kg
+                </p>
+                <a href="favorite/fav1.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/luka-doncic-2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luka Dončić</h5>
+                <p class="card-text">
+                  Luka Dončić is a Slovenian professional basketball player for
+                  the Dallas Mavericks of the National Basketball Association
+                  and the Slovenian national team. Dončić shone as a youth
+                  player for Union Olimpija
+                </p>
+                <p class="card-text">
+                  Height: 1.83 m
+                </p>
+                <p class="card-text">
+                  Weight: 75 kg
+                </p>
+                <a href="favorite/fav2.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img
+                src="../img/stephen-curry-warriors-nba-playoffs-sweep.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Stephen Curry</h5>
+                <p class="card-text">
+                  Stephen "Steph" Curry II is an American professional
+                  basketball player for the Golden State Warriors of the
+                  National Basketball Association Many players and analysts have
+                  called him the greatest shooter in NBA history.
+                </p>
+                <p class="card-text">
+                  Height: 1.91 m
+                </p>
+                <p class="card-text">
+                  Weight: 86 kg
+                </p>
+                <a href="favorite/fav3.html" class="btn btn-primary">
+                  More detail
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="page_content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm" id="column1">
+              <div class="card">
+                <img src="img/gear.jpg" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm" id="column2">
+              One of three columns
+            </div>
+            <div class="col-sm" id="column3">
+              One of three columns
+            </div>
+          </div>
         </div>
-
-        <div class="row">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="../img/52615407_original.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <button href="#" class="btn btn-primary">More detail</button>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img
-              src="../img/stephen-curry-warriors-nba-playoffs-sweep.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <button href="#" class="btn btn-primary">More detail</button>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img
-              src="../img/luka-doncic-2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <button href="#" class="btn btn-primary">More detail</button>
-            </div>
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
-
-    <div class="page_content"></div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
