@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+.myIndex {
+  margin: 0;
+  width: 100%;
+}
+
+.menubar .bg-light {
+  background-color: black !important;
+  padding: 15px;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: wheat;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .active {
+  margin-left: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: wheat;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Show Pop up */
+
+.modal a {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.containers {
+  padding: 3%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal .card {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.modal .card img {
+  margin: 0;
+}
+
+.modal h5 {
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal h1 {
+  color: white;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url(../img/ai.png);
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 60%;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}

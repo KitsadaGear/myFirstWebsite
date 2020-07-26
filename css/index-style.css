@@ -183,6 +183,58 @@ span.psw {
   border-right-style: solid;
 }
 
-.page_content .container .row #column3 {
+.page_content .container .row #column2 {
   border-right-style: solid;
+}
+
+.page_content .container .row #column2 .content-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.page_content .container .row #column2 .btn-outline-info {
+  margin-top: 30px;
+  margin-left: 25%;
+  padding: 14px;
+  cursor: pointer;
+  width: 50%;
+  color: black;
+}
+
+.page_content .container .row #column2 .contact .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  margin-left: 145px;
+}
+
+/* Twitter */
+.fa-instagram {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  margin-left: 130px;
+}
+
+.page_content .container .row #column2 .contact .fa,
+.page_content .container .row #column2 .contact .fa::before,
+.page_content .container .row #column2 .contact .fa::after {
+  box-sizing: content-box;
 }
