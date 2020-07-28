@@ -6,6 +6,10 @@ body {
   width: 100%;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
 .menubar .bg-light {
   background-color: black !important;
   padding: 15px;
@@ -146,7 +150,7 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* animate span size */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -160,4 +164,13 @@ span.psw {
   width: 100%;
   height: 892px;
   margin: 0;
+}
+
+.page_content .data_form {
+  width: 30%;
+  color: white;
+}
+
+.page_content .data_form p {
+  text-indent: 1.5em;
 }

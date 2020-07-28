@@ -147,7 +147,7 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* animate span size */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -239,4 +239,9 @@ span.psw {
 .page_content .container .row #column2 .contact .fa::before,
 .page_content .container .row #column2 .contact .fa::after {
   box-sizing: content-box;
+}
+
+.fa-github {
+  color: black;
+  margin-left: 250px;
 }

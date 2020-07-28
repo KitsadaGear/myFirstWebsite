@@ -146,7 +146,7 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* animate span size */
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -166,6 +166,7 @@ span.psw {
 .page_content .refer_form {
   width: 50%;
   color: white;
+  margin-left: 20px;
 }
 
 .page_content .refer_form .refer_header {

@@ -93,8 +93,9 @@ span.psw {
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
+
 .modal h1 {
-  color: white;
+  color: black;
 }
 
 /* Modal Content/Box */
@@ -146,14 +147,6 @@ span.psw {
   }
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-}
-
 /* Content */
 .page_content {
   background-image: url(../img/nba-2k20-game-am.jpg);
@@ -161,4 +154,37 @@ span.psw {
   width: 100%;
   height: 892px;
   margin: 0;
+}
+
+.page_content .container .row .col-sm {
+  margin-top: 100px;
+  width: 25rem;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  background-color: white;
+}
+
+.page_content .container .row #column1 {
+  border-left: solid;
+  border-right: solid;
+}
+
+.page_content .container .row #column2 {
+  border-right: solid;
+}
+.page_content .container .row #column3 {
+  border-right: solid;
+}
+.page_content .container .row #column4 {
+  border-right: solid;
+}
+.page_content .container .row #column5 {
+  border-right: solid;
+}
+.page_content .container .row #column6 {
+  border-right: solid;
+}
+
+.page_content .container .row h1 {
+  font-size: 30px;
 }
