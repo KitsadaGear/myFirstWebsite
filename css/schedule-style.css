@@ -1,9 +1,7 @@
-body {
+body,
+html {
   margin: 0;
-}
-.myIndex {
-  margin: 0;
-  width: 100%;
+  height: 100%;
 }
 
 .menubar .bg-light {
@@ -148,43 +146,64 @@ span.psw {
 }
 
 /* Content */
-.page_content {
+.myIndex {
   background-image: url(../img/nba-2k20-game-am.jpg);
-  background-size: 100% 100%;
-  width: 100%;
-  height: 892px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page_content .nav-item {
+  margin-top: 40px;
+}
+
+.page_content .nav-link {
   margin: 0;
+  padding: 20px 80px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
 }
 
-.page_content .container .row .col-sm {
-  margin-top: 100px;
-  width: 25rem;
-  border-top-style: solid;
-  border-bottom-style: solid;
+.page_content .subject_form {
+  margin-top: 55px;
+  margin-left: 70px;
   background-color: white;
+  display: none;
+  width: 0%;
 }
 
-.page_content .container .row #column1 {
-  border-left: solid;
-  border-right: solid;
+.page_content .subject_form h1 {
+  text-align: center;
 }
 
-.page_content .container .row #column2 {
-  border-right: solid;
-}
-.page_content .container .row #column3 {
-  border-right: solid;
-}
-.page_content .container .row #column4 {
-  border-right: solid;
-}
-.page_content .container .row #column5 {
-  border-right: solid;
-}
-.page_content .container .row #column6 {
-  border-right: solid;
+.page_content .subject_form li {
+  margin-top: 30px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.page_content .container .row h1 {
-  font-size: 30px;
+.page_content .subject_form p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.page_content .detail_form {
+  margin-top: 55px;
+  margin-left: 70px;
+  background-color: white;
+  display: none;
+  width: 0%;
+}
+
+.page_content .detail_form li {
+  margin-top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.page_content .detail_form p {
+  margin-top: 30px;
+  font-size: 20px;
 }

@@ -4,6 +4,7 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src = js/schedule_function.js></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -17,6 +18,7 @@
       media="screen,projection"
     />
   </head>
+  
   <body>
     <div class="myIndex">
       <div class="menubar">
@@ -104,11 +106,7 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-              <img
-                src="img/luka-doncic-2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="img/luka-doncic-2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Luka Dončić</h5>
                 <p class="card-text">
@@ -130,11 +128,7 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-              <img
-                src="img/curry.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="img/curry.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Stephen Curry</h5>
                 <p class="card-text">
@@ -157,72 +151,338 @@
           </div>
         </form>
       </div>
+
       <div class="page_content">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm" id="column1">
-              <div class="monday_subject">
-                <h1>Monday</h1>
-                <p>01418471 Introduction to Software Engineering(Lab)</p>
-                <p>Time : 11.00-13.00 Note : Moved to study at Final</p>
-                <hr>
+        <div class="container-fluid">
+          <div class="row">   
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+              <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: yellow;" onClick="reply_click(this.id)" id="monday">
+                      Monday
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: pink;" onClick="reply_click(this.id)" id="tuesday">
+                      Tuesday
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: greenyellow;" onClick="reply_click(this.id)" id="wednesday">
+                      Wednesday
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: orange;" onClick="reply_click(this.id)" id="thursday">           
+                      Thursday
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: skyblue;" onClick="reply_click(this.id)" id="friday">
+                      Friday
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" style="background-color: purple; color: white;" onClick="reply_click(this.id)" id="saturday">                      
+                      Saturday
+                    </button>
+                  </li>
+                </ul>
               </div>
-            </div>
-              <div class="col-sm" id="column2">
-                <div class="tuesday_subject">
+            </nav> 
+            <!-- Subject Form -->
+
+            <form class = "subject_form" id = "monday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('monday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1>Monday</h1>
+                  <hr> 
+                  <li><a id = "SE" onclick="showDetail(this.id)">01418471 Introduction to Software Engineering(Lab)</a></li> 
+                  <p>Study Time : 11.00-13.00</p> 
+                  <p>Note : Moved to study at Final</p>        
+                  <hr>      
+                </div>
+              </div>
+            </form>
+
+            <form class = "subject_form" id = "tuesday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('tuesday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
                   <h1>Tuesday</h1>
-                  <p>01418442 Web Technology and Web Services(Lecture)</p>
-                  <p>Time : 10.00-12.00</p>
+                  <hr> 
+                  <li><a id = "Web" onclick="showDetail(this.id)" >01418442 Web Technology and Web Services(Lecture)</a></li>
+                  <p>Study Time : 10.00-12.00</p>
                   <hr>
-                  <p>01418442 Web Technology and Web Services(Lab)</p>
-                  <p>Time : 14.30-16.30</p>
-                  <hr>
+                  <li><a id = "Web" onclick="showDetail(this.id)">01418442 Web Technology and Web Services(Lab)</a></li>
+                  <p>Study Time : 14.30-16.30</p>
+                  <hr>             
                 </div>
               </div>
-              <div class="col-sm" id="column3">
-                <div class="wednesday_subject">
-                  <h1>Wednesday</h1>
-                  <p>01418341 Intellectual Properties and Professional Ethics</p>
-                  <p>Time : 08.00-09.30</p>
+            </form>
+
+            <form class = "subject_form" id = "wednesday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('wednesday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1>Wednesday</h1>   
+                  <hr>   
+                  <li><a id = "IP" onclick="showDetail(this.id)">01418341 Intellectual Properties and Professional Ethics</a></li>
+                  <p>Study Time : 08.00-09.30</p>
                   <hr>
-                  <p>01418354 Cloud Computing Concepts and Services</p>
-                  <p>Time : 11.30-14.30</p>
-                  <hr>
+                  <li><a id = "Cloud" onclick="showDetail(this.id)">01418354 Cloud Computing Concepts and Services</a></li>
+                  <p>Study Time : 11.30-14.30</p>
+                  <hr>          
                 </div>
               </div>
-              <div class="col-sm" id="column4">
-                <div class="thursday_subject">
+            </form>
+            <form class = "subject_form" id = "thursday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('thursday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
                   <h1>Thursday</h1>
-                  <p>01418471 Introduction to Software Engineering(Lab)</p>
-                  <p>Time : 08.00-10.00</p>
                   <hr>
-                  <p>01418471 Introduction to Software Engineering(Lecture)</p>
-                  <p>Time : 11.00-13.00 Note : Study at midterm</p>
+                  <li><a id = "SE" onclick="showDetail(this.id)">01418471 Introduction to Software Engineering(Lab)</a></li>
+                  <p>Study Time : 08.00-10.00</p>
                   <hr>
+                  <li><a id = "SE" onclick="showDetail(this.id)">01418471 Introduction to Software Engineering(Lecture)</a></li>
+                  <p>Study Time : 11.00-13.00</p>
+                  <p>Note : Study at midterm</p>
+                  <hr>              
                 </div>
               </div>
-              <div class="col-sm" id="column5">
-                <div class="friday_subject">
-                  <h1>Friday</h1>
-                  <p>01418341 Intellectual Properties and Professional Ethics</p>
-                  <p>Time : 08.00-09.30</p>
-                  <hr>
+            </form>
+            <form class = "subject_form" id = "friday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('friday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1>Friday</h1> 
+                  <hr>          
+                  <li><a id = "IP" onclick="showDetail(this.id)">01418341 Intellectual Properties and Professional Ethics</a></li>
+                  <p>Study Time : 08.00-09.30</p>
+                  <hr>     
                 </div>
               </div>
-              <div class="col-sm" id="column6">
-                <div class="saturday_subject">
+            </form>
+            <form class = "subject_form" id = "saturday_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('saturday_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
                   <h1>Saturday</h1>
-                  <p>01418441 Business Data Dimension and Report Management</p>
-                  <p>Time : 12.30-16.30</p>
                   <hr>
-                  <p>01385261 Northern Thai Folk Music</p>
-                  <p>Time : 16.30-19.30</p>
+                  <li><a id = "Bus_Data" onclick="showDetail(this.id)">01418441 Business Data Dimension and Report Management</a></li>
+                  <p>Study Time : 12.30-16.30</p>
                   <hr>
+                  <li><a id = "Music" onclick="showDetail(this.id)">01385261 Northern Thai Folk Music</a></li>
+                  <p>Study Time : 16.30-19.30</p>
+                  <hr>                
                 </div>
-              </div>   
-            </div>
+              </div>
+            </form>
+
+            <!-- Subject Detail Form -->
+
+            <form class = "detail_form" id = "SE_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('SE_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01418471 Introduction to Software Engineering</h1>
+                  <hr>        
+                  <p>Credit : 3</p>      
+                  <hr>      
+                  <p style="text-indent: 40px;">Software engineering principles. Software process models. 
+                    Requirement engineering. Software modeling. Software design. 
+                    Software architecture. Pattern-based design. User interfaces. 
+                    Software verification and validation. Quality assurance. 
+                    Software project management.
+                  </p>
+                  <hr>
+                  <p>Detail from : ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ , 
+                    01418471 วิศวกรรมซอฟต์แวร์เบื้องต้น , 
+                    https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418471 , 2020 , 29 July 2560</p>
+                </div>
+              </div>
+            </form>  
+            
+            <form class = "detail_form" id = "Web_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('Web_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01418442 Web Technology and Web Services</h1>
+                  <hr>         
+                  <p>Credit : 3</p>      
+                  <hr>      
+                  <p style="text-indent: 40px;">Principles of Web technology and services.
+                     Standard specification of technology. Architecture and components. 
+                     Functionalities and mechanisms of Web services systems. 
+                     Development of Web technology packages. 
+                     API’s functionalities and configurations.
+                  </p>
+                  <hr>
+                  <p>Detail from : ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ , 
+                    01418442 เว็บเทคโนโลยีและเว็บบริการ , 
+                    https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418442 , 2020 , 29 July 2560</p>
+                </div>
+              </div>
+            </form> 
+
+            <form class = "detail_form" id = "IP_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('IP_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01418341 Intellectual Properties and Professional Ethics</h1>
+                  <hr>         
+                  <p>Credit : 3</p>      
+                  <hr>      
+                  <p style="text-indent: 40px;">Categories of intellectual property. 
+                    Acquisition of copyright. Exclusive rights of copyright holder. 
+                    Copyright infringement. Fair use. Free software license. 
+                    Open source software license. Shrink wrap license. 
+                    Creative Commons. Patent. Trade mark and service mark. 
+                    Privacy policy. Computer crime. Case studies.
+                  </p>
+                  <hr>
+                  <p>Detail from : ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ , 
+                    01418341 ทรัพย์สินทางปัญญาและจรรยาบรรณวิชาชีพ , 
+                    https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418341 , 2020 , 29 July 2560</p>
+                </div>
+              </div>
+            </form> 
+
+            <form class = "detail_form" id = "Bus_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('Bus_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01418441 Business Data Dimension and Report Management</h1>
+                  <hr>         
+                  <p>Credit : 3</p>      
+                  <hr>      
+                  <p style="text-indent: 40px;">Report and business process for enterprise.
+                    Concept and development of data dimension. 
+                    Tools and modeling for business data analysis. 
+                    Implementation success factor. Leading enterprise systems. 
+                    Case studies and technology trends.
+                  </p>
+                  <hr>
+                  <p>Detail from : ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์ , 
+                    01418441 การจัดการมิติข้อมูลและรายงานทางธุรกิจ , 
+                    https://cs.sci.ku.ac.th/curriculum/bachelor/y2560/course/c01418441 , 2020 , 29 July 2560</p>
+                </div>
+              </div>
+            </form> 
+
+            <form class = "detail_form" id = "Cloud_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('Cloud_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01418354 Cloud Computing Concepts and Services</h1>
+                  <hr>         
+                  <p>Credit : 3</p>      
+                  <hr>      
+                </div>
+              </div>
+            </form> 
+
+            <form class = "detail_form" id = "Music_form">
+              <div class = "container"> 
+                <div class="col-sm" id="column1">
+                  <span
+                    onclick="document.getElementById('Music_form').style.display='none'"
+                    ;
+                    class="close"
+                    title="Close Modal"
+                    style="color: black;"
+                    >&times;
+                  </span>
+                  <h1 style="font-size: 30px;">01385261 Northern Thai Folk Music</h1>
+                  <hr>         
+                  <p>Credit : 3</p>      
+                  <hr>      
+                </div>
+              </div>
+            </form> 
+                 
           </div>
-        </div>
+        </div> 
       </div>
     </div>
     <script
